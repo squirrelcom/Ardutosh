@@ -27,7 +27,7 @@ void Desktop::Handler(Window* window, SystemEvent event)
 
 	}
 
-	if (window->Item(arduboyIcon, FlashString("Your Computer"), itemsX, itemsY))
+	if (window->Item(arduboyIcon, FlashString("SquirrelTop"), itemsX, itemsY))
 	{
 		if (Window* win = Finder::OpenArduboyFolder())
 		{
