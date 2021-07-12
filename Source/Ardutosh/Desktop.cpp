@@ -27,7 +27,7 @@ void Desktop::Handler(Window* window, SystemEvent event)
 
 	}
 
-	if (window->Item(arduboyIcon, FlashString("Arduboy"), itemsX, itemsY))
+	if (window->Item(arduboyIcon, FlashString("Your Computer"), itemsX, itemsY))
 	{
 		if (Window* win = Finder::OpenArduboyFolder())
 		{
@@ -95,7 +95,7 @@ void Desktop::SplashHandler(Window* window, SystemEvent event)
 	if (event == SystemEvent::Repaint)
 	{
 		Platform::DrawSprite(17, DISPLAY_HEIGHT / 2 - 6, arduboyIcon, 0);
-		Font::DrawString(FlashString("Welcome to Arduboy."), 31, DISPLAY_HEIGHT / 2 - Font::glyphHeight / 2, BLACK);
+		Font::DrawString(FlashString("Welcome to SquirrOS."), 31, DISPLAY_HEIGHT / 2 - Font::glyphHeight / 2, BLACK);
 	}
 
 	constexpr int splashShowTime = 64;
